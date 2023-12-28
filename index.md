@@ -52,5 +52,7 @@ Highlights of this site.
 [Workflows]: {% link recipes/ci-cd/github-actions/workflows/index.md %}
 [SEO]: {% link recipes/web/seo/index.md %}
 [Shell]: {% link recipes/shell/index.md %}
+[Ruby]: {% link recipes/ruby/index.md %}
+[Godot]: {% link recipes/godot/index.md %}
 [Jekyll]: {% link recipes/jekyll/index.md %}
 [Containers]: {% link recipes/containers/index.md %}
