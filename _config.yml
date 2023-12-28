@@ -3,14 +3,14 @@
 title: Code Cookbook
 description: Reusable code patterns which you can use as reference or copy to your project
 
-github_username: MichaelCurrin
+github_username: cfurrow
 
 ### Build settings ###
 
-url: "https://michaelcurrin.github.io"
-baseurl: "/code-cookbook"
+url: "https://cfurrow.github.io"
+baseurl: "/cookbooks.carlfurrow.com"
 
-google_analytics: G-ED9PSVN5DS
+google_analytics: G-IGNORE
 
 header_pages:
   - index.md
