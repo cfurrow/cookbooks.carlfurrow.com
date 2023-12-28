@@ -7,8 +7,8 @@ github_username: cfurrow
 
 ### Build settings ###
 
-url: "https://cfurrow.github.io"
-baseurl: "/cookbooks.carlfurrow.com"
+url: "https://cookbooks.carlfurrow.com"
+baseurl: "/"
 
 google_analytics: G-IGNORE
 
