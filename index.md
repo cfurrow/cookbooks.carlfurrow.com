@@ -23,11 +23,9 @@ And the recipes are based on real-world code as much as possible, collecting fro
 
 I use these often so it helps to have them on the homepage.
 
-- [Vue][]
-- [Make][]
-    - Sample `Makefile` files.
-- [EditorConfig][]
-    - Samples for a `.editorconfig` file.
+- [Shell][]
+- [Ruby][]
+- [Godot][]
 - [Jekyll][]
     - Code snippets and configs.
 
