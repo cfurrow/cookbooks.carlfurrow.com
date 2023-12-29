@@ -8,7 +8,7 @@ github_username: cfurrow
 ### Build settings ###
 
 url: "https://cookbooks.carlfurrow.com"
-baseurl: "/"
+baseurl: ""
 
 plausible_analytics:
   domain: cookbooks.carlfurrow.com
