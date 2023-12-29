@@ -10,7 +10,8 @@ github_username: cfurrow
 url: "https://cookbooks.carlfurrow.com"
 baseurl: "/"
 
-google_analytics: G-IGNORE
+plausible_analytics:
+  domain: cookbooks.carlfurrow.com
 
 header_pages:
   - index.md
