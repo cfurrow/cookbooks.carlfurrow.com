@@ -1,5 +1,5 @@
 GIT
-  remote: https://github.com/MichaelCurrin/fractal
+  remote: https://github.com/cfurrow/jekyll-fractal-theme
   revision: f0b418c4a3f78fd2401a066fe478a68dabdaa628
   specs:
     fractal (4.7.0)
