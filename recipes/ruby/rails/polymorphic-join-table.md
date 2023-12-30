@@ -1,3 +1,7 @@
+---
+logo: rubyonrails
+---
+
 # Creating a polymorphic join table
 
 Found this via example here: https://stackoverflow.com/a/51564821/38375

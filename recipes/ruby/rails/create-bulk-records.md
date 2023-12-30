@@ -1,5 +1,8 @@
-# Create records in bulk
+---
+logo: rubyonrails
+---
 
+# Create records in bulk
 
 ```ruby
 segment_attributes = []

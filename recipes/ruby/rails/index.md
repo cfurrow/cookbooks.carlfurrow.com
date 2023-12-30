@@ -1,5 +1,5 @@
 ---
-logo: ruby
+logo: rubyonrails
 ---
 
 # Ruby on Rails

@@ -1,3 +1,7 @@
+---
+logo: godotengine
+---
+
 # Keyboard Inputs
 
 First, you must setup your Godot Project's input maps. Go to `Project > Project Settings > Input Map` and do something like the following:
