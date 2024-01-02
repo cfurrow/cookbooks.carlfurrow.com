@@ -1,31 +1,28 @@
 # Split up a previous commit
 If you have a previous commit you want to split up into multiple commits, you can do this in `lazygit` by doing this:
 
-For the commit you want to split up, go to the parent commit, and press "e" to start interactive rebase
-You'll see that all following commits are labeled with "pick"
+Find the commit you want to split up and press "e" to start interactive rebase. You'll see that all following commits are labeled with "pick":
 
-![image1](lazygit - how to split up previous commit_image_1.png)
+![image1](lazygit - how to split up previous commit_edit the commit.png)
 
-Highlight the commit you want to edit/split (63c3aff2 in the screenshot), and press 'e' to mark it as an 'edit' commit, not a 'pick' commit.
+Highlight the parent commit of the commit you want to split up. In this case, highlight cb0ae01a, which is the parent commit of 951ebe7d, and press "g", and select "s" for "soft reset".
 
-Then press "enter" on that commit to see the changes made in that commit.
-Select the file you want to make changes to, and select individual lines to change, or press "space" to make changes on the entire file.
-Press `<Control-P>` to see the custom patch options.
-- To remove the selected file (or patches) from the commit, select "c Reset patch" to undo those changes
+![image](lazygit - how to split up previous commit_soft reset window.png)
 
-![image2](lazygit - how to split up previous commit_image_2.png)
+![image](lazygit - how to split up previous commit_after soft reset.png)
 
-- You can also select just a few lines, and apply just those lines as a patch by selecting "a Apply patch"
+In the above screenshot, you can see your changes are now unstaged, and ready to be committed again. Since we wanted to split up these changes into 2+ commits, we can do that now. The first thing you'll probably want to do is remove all changes from the git index, and you can do that by selecting the files in the Files area, and press "space" to unstage all changes in that file.
 
-This is what you'll see if you selected just a few lines:
-![image 3](lazygit - how to split up previous commit_image_3.png)
+Now, with that file still selected, press "enter" to start staging individual lines you want to commit in your first commit. In our case, we only want to commit the "Context" heading and paragraphs, and leave out the "Summary" heading and paragraphs. So we will select only the lines related to the change we want to make for the first commit.
 
-You can now commit just those changes by pressing "C" in the Files area of `lazygit`
+![image](lazygit - how to split up previous commit_selecting first commit changes.png)
+
+You can now commit just those changes by pressing "c" in the Files area of `lazygit`.
+
 You'll still be in interactive rebase, and and make more custom patches/changes and commit each one as you want.
 When you're done, press "m" to view "merge/rebase options" and continue the rebase to move on. Eventually it will get you back to this view:
 
-![image4](lazygit - how to split up previous commit_image_4.png)
+![image](lazygit - how to split up previous commit_new commit log.png)
 
-The new commit is there now, "change name of method", and it was applied before our target commit, "wip - split up this commit".
-Neat!
+As you can see, we now have two commits where a single commit used to be.
 
