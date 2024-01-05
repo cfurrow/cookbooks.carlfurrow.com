@@ -44,6 +44,10 @@ Highlights of this site.
 - [Containers][]
     - Commands and configs for using Docker and Kubernetes.
 
+## Desired / WIP Recipes
+- Ruby/Rubocop: custom cops
+- Javascript/ESLint: custom linter
+
 
 [Vue]: {% link recipes/javascript/packages/vue/index.md %}
 [EditorConfig]: {% link recipes/other/editor-config.md %}
