@@ -48,6 +48,12 @@ Highlights of this site.
 - Ruby/Rubocop: custom cops
 - Javascript/ESLint: custom linter
 
+## TODO
+_This area is a task list for the overall cookbooks.carlfurrow.com site_
+
+- [ ] Site-wide fuzzy-searching.
+- [ ] Build a CLI to view/search/add pages from a terminal (fzf, neovim, etc)
+
 
 [Vue]: {% link recipes/javascript/packages/vue/index.md %}
 [EditorConfig]: {% link recipes/other/editor-config.md %}
