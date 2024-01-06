@@ -5,6 +5,8 @@ layout: home
 
 > {{ site.description }}
 
+{% include search-lunr.html %}
+
 Welcome to **Code Cookbook**.
 
 This aims to have an entire recipe to solve a problem. Such as a script or config, or a few files which work together.
