@@ -21,6 +21,7 @@ plausible_analytics:
 header_pages:
   - index.md
   - recipes/index.md
+  - search.md
   - about.md
 
 exclude:
@@ -33,6 +34,7 @@ exclude:
   - Makefile
   - README.md
   - sample*.png
+  - "*.code-workspace"
 
 liquid:
   error_mode: strict

@@ -5,6 +5,8 @@ layout: home
 
 > {{ site.description }}
 
+{% include search-lunr.html %}
+
 Welcome to **Code Cookbook**.
 
 This aims to have an entire recipe to solve a problem. Such as a script or config, or a few files which work together.
@@ -51,7 +53,6 @@ Highlights of this site.
 ## TODO
 _This area is a task list for the overall cookbooks.carlfurrow.com site_
 
-- [ ] Site-wide fuzzy-searching.
 - [ ] Build a CLI to view/search/add pages from a terminal (fzf, neovim, etc)
 
 

@@ -1,0 +1,19 @@
+---
+layout: null
+permalink: /search.json
+---
+
+
+[
+  {% for recipe in site.pages %}
+    {% unless recipe.url contains "/recipes/" %}
+      {% continue %}
+    {% endunless %}
+    {
+      "title"    : "{{ recipe.title }}",
+      "url"      : "{{ site.baseurl }}{{ recipe.url }}",
+      "description" : "{{ recipe.description | strip_html | strip_newlines | escape }}",
+      "cookbook" : "{{ recipe.url |  split:  '/' | slice: 2  }}"
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]
