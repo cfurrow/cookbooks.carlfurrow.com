@@ -53,7 +53,6 @@ Highlights of this site.
 ## TODO
 _This area is a task list for the overall cookbooks.carlfurrow.com site_
 
-- [ ] Site-wide fuzzy-searching.
 - [ ] Build a CLI to view/search/add pages from a terminal (fzf, neovim, etc)
 
 
