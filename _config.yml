@@ -21,6 +21,7 @@ plausible_analytics:
 header_pages:
   - index.md
   - recipes/index.md
+  - search.md
   - about.md
 
 exclude:
