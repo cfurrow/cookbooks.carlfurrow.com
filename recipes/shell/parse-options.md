@@ -9,26 +9,47 @@ The `while` loop runs until all ARGV arguments are parsed, and there are no more
 We use the `case` statement to determine if the argument (and possible value) is one of the known arguments we want to parse. If it's not a known argument, we print a message, and move to the next argument.
 
 ```sh
+#!/bin/bash
+
+# Usage: ./script.sh [--verbose|-v] [--file|-f file.txt]
+
 VERBOSE=0
 FILE=""
 
 while [ $# -gt 0 ]; do
-    case "$1" in
-        -v|--verbose)
-            echo "verbose mode"
-            VERBOSE=1
-            ;;
-        -h|--help)
-            echo "help mode"
-            ;;
-        -f|--file)
-            echo "file mode"
-            FILE="$2"
-            ;;
-        *)
-            echo "unknown option"
-            ;;
-    esac
-    shift
+  case "$1" in
+    -v|--verbose)
+      echo "verbose mode"
+      VERBOSE=1
+      ;;
+    -h|--help)
+      echo "help mode"
+      ;;
+    -f|--file)
+      echo "file mode"
+      FILE="$2"
+      ;;
+    *)
+      echo "unknown option"
+      ;;
+  esac
+  shift
 done
+
+# Only  output log message if VERBOSE is set to 1
+log() {
+  local MESSAGE="$1"
+  if [ "$VERBOSE" = 1 ]; then
+    echo "$MESSAGE"
+  fi
+}
+
+# check if file is empty
+if [ -z "$FILE" ]; then
+  log "file is empty"
+else
+  log "file is not empty: $FILE"
+fi
+
+# the rest of your script goes here.
 ```
