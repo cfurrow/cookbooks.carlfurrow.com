@@ -1,5 +1,5 @@
 ---
-logo: 
+logo: apple
 ---
 # macOS
 
