@@ -24,3 +24,15 @@ defaults write com.apple.Dock showhidden -bool TRUE && killall Dock
 ```sh
 defaults write com.apple.finder "AppleShowAllFiles" -bool "true" && killall Finder
 ```
+
+## Allow TouchID to be used for 'sudo' requests
+
+```sh
+cd /etc/pam.d
+sudo cp sudo_local.template sudo_local
+vim sudo_local
+
+# uncomment this line in the file:
+#   auth       sufficient     pam_tid.so
+# then save the file
+```
