@@ -30,7 +30,7 @@ defaults write com.apple.finder "AppleShowAllFiles" -bool "true" && killall Find
 ```sh
 cd /etc/pam.d
 sudo cp sudo_local.template sudo_local
-vim sudo_local
+sudo vim sudo_local
 
 # uncomment this line in the file:
 #   auth       sufficient     pam_tid.so
