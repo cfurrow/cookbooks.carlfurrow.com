@@ -28,12 +28,13 @@ while [ $# -gt 0 ]; do
     -f|--file)
       echo "file mode"
       FILE="$2"
+      shift # we need to shift an extra time since this option expects a value. 
       ;;
     *)
       echo "unknown option"
       ;;
   esac
-  shift
+  shift # shift the arg list to remove the one we just processed, and move on to the next one
 done
 
 # Only  output log message if VERBOSE is set to 1
