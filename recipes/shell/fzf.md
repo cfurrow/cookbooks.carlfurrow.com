@@ -1,8 +1,18 @@
-# Fzf
+# fzf
 
 [junegunn/fzf](https://github.com/junegunn/fzf)
 
-NOTE: For examples on this page, I assume that the input text is stored in a variable called `$input`. You can replace `$input` with the actual input text.
+## Previewing the contents of a file
+
+Here we use the `ls` command to output the list of all txt files, then pipe that result to `fzf`.  We want to be able to view the contents of the txt files, so we also add the `--preview` argument,
+which requires us to give it a command to let `fzf` know how to preview the file. In our case, we want to see the contents of each file, so we use the `cat` command along with the special `fzf` variable, `{}`, which presents the currently selected file. 
+
+```sh
+ls *.txt | fzf --preview 'cat {}'
+```
+
+![CleanShot 2024-09-18 at 16 31 45](https://github.com/user-attachments/assets/52b739ba-1b0e-4bc7-a309-5c4fabb6ed32)
+
 
 ## Multi-select
 If you want to select multiple items, you can use the `--multi` option
@@ -13,11 +23,24 @@ foo
 bar
 baz
 ```
+
 To open an `fzf` window that allows you to select multiple items, you can do this, and press `TAB` to select multiple items, then `ENTER` to confirm your selection:
 
 ```
 echo "$input" | fzf --multi
 ```
+
+### Previewing what you've selected when using `--multi`
+It's usually helpful to see all of the items you've selected in a multi-select window, so you can add the `--preview` option to do so:
+
+```sh
+echo "$input" | fzf --multi --preview 'cat {+f}'
+```
+
+The `--preview` option requires that you pass a command to it, which will be used to populate the preview window. In our example above, we use the `cat` command along with a special `fzf` variable, `{+f}`, which points to a temporary file that holds all of the items you've selected. 
+
+![CleanShot 2024-09-18 at 16 28 18](https://github.com/user-attachments/assets/b877931d-2396-4920-ac5d-4096a241d723)
+
 
 ## Output a particular field with `--bind`
 
