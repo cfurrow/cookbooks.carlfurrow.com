@@ -13,9 +13,9 @@ docker diff CONTAINER
 
 You can also use `docker ls` in combination with [`fzf`](/recipes/shell/fzf.html) to make selecting the container interactive:
 
-{% raw %}
- docker diff $(docker container ls --format "{{.Names\}\}" | fzf)
-{% endraw %}
+```sh
+  docker diff $(docker container ls --format "{{"{{"}}.Names{{"}}"}}" | fzf)
+```
 
 
 ## Related
