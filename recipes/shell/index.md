@@ -3,6 +3,17 @@ logo: gnubash
 ---
 # Shell
 
+## Keyboard Shortcuts
+
+**Clear the currently typed command, but save it for later pasting**
+If you typed out a long command, but want to run something else first, but don't want to lose what you've typed, you can use `Ctrl-U`, which saves what you've typed, and clears the current line so you can type out your other command. When you're ready to run your original command, you can get it back by typing `Ctrl-Y`.
+
+`Ctrl-U` - `unix-line-discard`
+Kill backward from the cursor to the beginning of the current line. (stores text in the "kill ring")
+
+`Ctrl-Y` - `yank`
+Yank the top of the kill ring into the buffer at point.
+
 ## Tiny Scripts
 
 **create filename with date time in it**
