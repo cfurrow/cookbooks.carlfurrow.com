@@ -5,7 +5,7 @@ logo: gnubash
 
 ## Keyboard Shortcuts
 
-**Clear the currently typed command, but save it for later pasting**
+**Clear the currently typed command, but save it for later pasting:** 
 If you typed out a long command, but want to run something else first, but don't want to lose what you've typed, you can use `Ctrl-U`, which saves what you've typed, and clears the current line so you can type out your other command. When you're ready to run your original command, you can get it back by typing `Ctrl-Y`.
 
 `Ctrl-U` - `unix-line-discard`
@@ -16,7 +16,7 @@ Yank the top of the kill ring into the buffer at point.
 
 ## Tiny Scripts
 
-**create filename with date time in it**
+**create filename with date time in it:** 
 handy script to quickly create a filename with date and time already in the name of the file.
 say you have a bunch of log lines in your clipboard, and you want to output it to a file that is timestamped, etc.
 
