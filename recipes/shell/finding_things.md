@@ -54,8 +54,8 @@ This option allows you to execute a command on each item found by find. In this 
   *	actions/cache@v2
 
 `{}`:
-This is a placeholder that find replaces with the current directory found (in this case, each .github directory).
+This is a placeholder that `find` replaces with the current directory found (in this case, each `.github` directory).
 
 `+`:
-This indicates the end of the -exec command and tells find to pass all the found directories to grep at once, rather than invoking grep separately for each directory.
+This indicates the end of the `-exec` command and tells `find` to pass all the found directories to `grep` at once, rather than invoking `grep` separately for each directory.
 
