@@ -47,7 +47,7 @@ This option allows you to execute a command on each item found by find. In this 
 
 `"actions/upload-artifact@v3|actions/download-artifact@v3|actions/cache@v1|actions/cache@v2"`:
 
-* This is the search pattern. The | operator acts as a logical OR, meaning that grep will look for any of the following strings:
+* This is the search pattern. The `|` operator acts as a logical OR, meaning that grep will look for any of the following strings:
   * actions/upload-artifact@v3
   * actions/download-artifact@v3
   *	actions/cache@v1
