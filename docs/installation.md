@@ -18,7 +18,7 @@ $ cd code-cookbook
 ## Set up hooks
 
 ```sh
-$ make hooks
+$ rake hooks
 ```
 
 
@@ -27,5 +27,5 @@ $ make hooks
 Install gems - this includes Jekyll 3.
 
 ```sh
-$ make install
+$ rake install
 ```

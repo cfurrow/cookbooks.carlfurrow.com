@@ -1,7 +1,7 @@
 # Usage
 
 ```sh
-$ make serve
+$ rake serve
 ```
 
 Open the browser at:
