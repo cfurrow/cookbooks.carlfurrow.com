@@ -1,5 +1,6 @@
 ---
 ---
 $brand-color: #142f89;
-@import "fractal";
-@import "custom";
+
+@use "fractal";
+@use "custom";
