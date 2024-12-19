@@ -1,16 +1,17 @@
-
-/**  
- * Returns the URL of the header element.
- * 
- * @param {HTMLElement} header - The header element to get the URL of.
- * @returns {string} The URL of the header element.
-*/
-function getUrlOfHeader(header) {
-  // generate a URL for the current URL, but include the header id in the URL as a hash
-  return window.location.href.split('#')[0] + '#' + header.id;
-}
-
 document.addEventListener('DOMContentLoaded', function() {
+  /**  
+   * Returns the URL of the header element.
+   * 
+   * @param {HTMLElement} header - The header element to get the URL of.
+   * @returns {string} The URL of the header element.
+  */
+  function getUrlOfHeader(header) {
+    // generate a URL for the current URL, but include the header id in the URL as a hash
+    return window.location.href.split('#')[0] + '#' + header.id;
+  }
+
+  // TODO: allow for theme to set styles of these links. Add css classes, etc. Move styles to css file
+
   // Decorate all headers with a link next to them, that when clicked, copies the URL of the headaer to the clipboard.
   // The link should be a small icon, or "#", that is hidden unless the user is hovering over the header
   const headers = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
@@ -28,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
     link.addEventListener('click', function(event) {
       event.preventDefault();
       navigator.clipboard.writeText(url);
+      notifyUser('URL copied to clipboard!');
     });
     header.appendChild(link);
     header.addEventListener('mouseenter', function() {
