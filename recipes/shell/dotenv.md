@@ -2,7 +2,6 @@
 
 How to load `.env` in Bash.
 
-
 Given file `.env`:
 
 ```sh

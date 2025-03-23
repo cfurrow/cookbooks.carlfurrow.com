@@ -6,7 +6,6 @@ logo: gnubash
 ## Really useful command line help
 The self hosting community collects many helpful shell commands and keyboard shortcuts here: https://selfh.st/command-line-corner/
 
-
 ## Keyboard Shortcuts
 
 **Clear the currently typed command, but save it for later pasting:** 
