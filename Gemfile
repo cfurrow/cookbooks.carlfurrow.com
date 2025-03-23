@@ -5,6 +5,8 @@ gem "webrick"
 gem "csv"
 gem "base64"
 gem "bigdecimal"
+gem "date"
+gem "json"
 
 gem "fractal", git: "https://github.com/cfurrow/jekyll-fractal-theme"
 # Use a local version of "fractal" theme, located at "~/workspace/jekyll-fractal-theme"
