@@ -4,7 +4,19 @@ logo: gnubash
 # Shell
 
 ## Really useful command line help
-The self hosting community collects many helpful shell commands and keyboard shortcuts here: https://selfh.st/command-line-corner/
+The self hosting community collects many helpful shell commands and keyboard shortcuts here: [selfh.st/command-line-corner](https://selfh.st/command-line-corner)
+
+## `ls` command
+
+```sh
+# list all files, including hidden ones
+ls -al
+ls -la
+
+# list files, and sort by modification type (most recent first)
+ls -lt
+ls -tl
+```
 
 ## Keyboard Shortcuts
 
