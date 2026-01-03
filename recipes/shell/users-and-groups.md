@@ -13,29 +13,39 @@ echo "nobody:nobody" | chpasswd
 ## Create a new group
 
 ```sh
-groupadd nogroup
+$ groupadd nogroup
 ```
 
 ## Add "nobody" to group "nogroup"
 
 ```sh
-usermod -a -G nogroup nobody
+$ usermod -a -G nogroup nobody
 ```
 
 ## Get the list of gruops a user belongs to
 
 ```sh
-groups nobody
+$ groups nobody
+
+nobody : users nobody
+```
+
+## Get info about a User by their UID
+
+```sh
+$ getent passwd 99
+
+nobody:x:99:100:nobody:/:/bin/false
 ```
 
 ## List all groups
 
 ```sh
-cat /etc/group
+# cat /etc/group
 ```
 
 ## List all users and their groups
 
 ```sh
-cat /etc/passwd
+$ cat /etc/passwd
 ```
