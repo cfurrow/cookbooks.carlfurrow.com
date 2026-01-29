@@ -6,6 +6,9 @@
 # add a new user, "nobody", to group "users"
 useradd -m -g users -s /bin/bash nobody
 
+# add new user "nobody" and set the user id (uid) to 99:
+useradd -u 99 nobody
+
 # set the password of "nobody" to "nobody"
 echo "nobody:nobody" | chpasswd
 ```
@@ -22,7 +25,7 @@ $ groupadd nogroup
 $ usermod -a -G nogroup nobody
 ```
 
-## Get the list of gruops a user belongs to
+## Get the list of groups a user belongs to
 
 ```sh
 $ groups nobody
