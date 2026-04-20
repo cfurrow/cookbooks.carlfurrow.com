@@ -33,6 +33,13 @@ $ groups nobody
 nobody : users nobody
 ```
 
+## Get info about the current user
+
+```sh
+$ id
+uid=501(yourusername) gid=20(staff) groups=20(staff),101(access_bpf),12(everyone),61(localaccounts),79(_appserverusr),80(admin),81(_appserveradm),98(_lpadmin),100(_lpoperator),204(_developer),250(_analyticsusers)
+```
+
 ## Get info about a User by their UID
 
 ```sh
