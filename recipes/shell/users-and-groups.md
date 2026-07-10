@@ -24,6 +24,13 @@ chown nobody /home/nobody
 chmod 700 /home/nobody
 ```
 
+## Configure or change user's shell
+A user is required to have a shell configured in order for them to ssh into the machine.
+
+```sh
+usermod -s /bin/bash nobody
+```
+
 ## Create a new group
 
 ```sh
