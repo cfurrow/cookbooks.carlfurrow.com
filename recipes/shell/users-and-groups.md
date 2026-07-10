@@ -13,6 +13,17 @@ useradd -u 99 nobody
 echo "nobody:nobody" | chpasswd
 ```
 
+## Add or change home directory of user
+
+```sh
+# Change the home directory of user 'nobody' to /home/nobody
+usermod -d /home/nobody nobody
+
+# be sure that the permissions for the new home directory are correct
+chown nobody /home/nobody
+chmod 700 /home/nobody
+```
+
 ## Create a new group
 
 ```sh
