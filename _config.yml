@@ -14,10 +14,6 @@ github:
 url: "https://cookbooks.carlfurrow.com"
 baseurl: ""
 
-
-plausible_analytics:
-  domain: cookbooks.carlfurrow.com
-
 header_pages:
   - index.md
   - recipes/index.md
